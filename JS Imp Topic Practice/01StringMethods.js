@@ -52,3 +52,15 @@ console.log(`Lowerecase: ${str7.toLowerCase()}`);
 let text1 = 'Hello';
 let text2 = 'World';
 console.log(`Concat two strings: ${text1.concat(" ", text2)}`);
+
+
+// trim(): This method is used to remove white spaces from both end of the string.
+// trimStart(): This method removes white spaces only from the beginning of the string.
+// trimEnd(): This method removes white spaces only from the end of the string.
+let strTrim = "  Hello world  ";
+console.log(strTrim.trim()); // 'Hello World'
+console.log(strTrim.trimStart()); // 'Hello World  '
+console.log(strTrim.trimEnd()); // '  Hello World'
+
+
+// 
