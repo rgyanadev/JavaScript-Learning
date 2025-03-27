@@ -63,4 +63,40 @@ console.log(strTrim.trimStart()); // 'Hello World  '
 console.log(strTrim.trimEnd()); // '  Hello World'
 
 
-// 
+// padStart(length, value): This method pads a string from the start.
+// It pads a string with another string (multiple times) until it reaches a given length.
+let string8 = "5";
+console.log(string8.padStart(4, "0"));
+
+
+// padEnd(length, value): This method pads a string from the end.
+// It pads a string with another string (multiple times) until it reaches a given length.
+let string9 = "5";
+console.log(string8.padEnd(4, "0"));
+
+
+// repeat(count): method returns a string with a number of copies of a string.
+let string10 = "Hello";
+console.log(string10.repeat(5));
+
+
+// replace(stringWantToReplace, replaceValue): This method replaces a specified value with another value in a string
+let string11 = 'JavaScript is best of the best';
+console.log(string11.replace('JavaScript', 'Java'));
+
+// Regular expression for replacing all
+console.log(string11.replace(/best/g, 'Better'));
+
+// This method is case sensitive. The value should be case sensitive.
+// But for case insensitive also we can replace value by using /i expression
+console.log(string11.replace(/javascript/i, 'GoLang'))
+
+// replaceAll(): This method is allows you to specify a regular expression instead of a string to be replaced.
+console.log(string11.replaceAll('best', 'Better'))
+// console.log(string11.replaceAll(/best/g, 'Better'))
+
+
+// split(): This method can convert a string into an array
+let string12 = "apple,banana,orange";
+console.log(string12.split(','));
+console.log(string12.split(',', 2));
