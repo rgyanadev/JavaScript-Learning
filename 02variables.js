@@ -25,3 +25,9 @@ accountEmail = 'hareu@test.com';
 accountPassword = '8973487349';
 
 console.table([accountId, accountEmail, accountPassword, accountState]);
+
+
+// There are different way to define varialable also but those are not recommended;
+let num1, num2, num3;
+num1 = num2 = num3 = 10;
+console.table([num1, num2, num3]);
