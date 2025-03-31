@@ -2,7 +2,7 @@
 Javascript has three keyword to declare varibales
 
 var: Function scope, can be redeclared & can be re assigned.
-     In mordern JS, It prefers not to use because of the issue of block scope & function scope.
+     In modern JS, It prefers not to use because of the issue of block scope & function scope.
 
 let: Block scope, can not redeclared but can be re assigned.
 
