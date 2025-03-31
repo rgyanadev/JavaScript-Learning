@@ -96,7 +96,8 @@ console.log(string11.replaceAll('best', 'Better'))
 // console.log(string11.replaceAll(/best/g, 'Better'))
 
 
-// split(): This method can convert a string into an array
+// split(): This method can convert a string into an array. It separate string based on seperator.
+// split(seperator, limit);
 let string12 = "apple,banana,orange";
 console.log(string12.split(','));
 console.log(string12.split(',', 2));
