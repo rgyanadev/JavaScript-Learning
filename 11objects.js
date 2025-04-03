@@ -60,3 +60,18 @@ JsUser.greetingTwo = function () {
 }
 console.log(JsUser.greetingTwo());
 console.log(JsUser);
+
+
+// Object destructuring
+const course = {
+    name: "Javascript with Heros",
+    duration: "60 hours",
+    courseInstructor: "Gyana Ranjan Rout"
+}
+// now suppose we want to access courseInstructor several times then instead of writing multiple course.courseInstructor we can write in a different way.
+// It's just synaxical change, not madatory to do.
+const { courseInstructor } = course;
+console.log(courseInstructor);
+// Now if we want to give some different name to access courseInstructor that also we can do.
+const { duration: time } = course;
+console.log(time);
