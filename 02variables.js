@@ -1,13 +1,13 @@
 /*
-Javascript has three keyword to declare varibales
+     Javascript has three keyword to declare varibales
 
-var: Function scope, can be redeclared & can be re assigned.
-     In modern JS, It prefers not to use because of the issue of block scope & function scope.
+     var: Function scope, can be redeclared & can be re assigned.
+          In modern JS, It prefers not to use because of the issue of block scope & function scope.
 
-let: Block scope, can not redeclared but can be re assigned.
+     let: Block scope, can not redeclared but can be re assigned.
 
-const: Block scope, always need assignable & can not be re assigned.
-       But we can modify object values & array elements.
+     const: Block scope, always need assignable & can not be re assigned.
+          But we can modify object values & array elements.
 */
 
 const accountId = 14556;
@@ -27,7 +27,8 @@ accountPassword = '8973487349';
 console.table([accountId, accountEmail, accountPassword, accountState]);
 
 
-// There are different way to define varialable also but those are not recommended;
+// There are different way to define varialable also but those are not recommended; 
 let num1, num2, num3;
 num1 = num2 = num3 = 10;
 console.table([num1, num2, num3]);
+
