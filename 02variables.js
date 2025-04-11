@@ -31,4 +31,3 @@ console.table([accountId, accountEmail, accountPassword, accountState]);
 let num1, num2, num3;
 num1 = num2 = num3 = 10;
 console.table([num1, num2, num3]);
-
