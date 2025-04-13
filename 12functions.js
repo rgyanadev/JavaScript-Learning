@@ -56,9 +56,9 @@ console.log("Result of retured value:", returedValue);
 // * There is also another thing called scope: we will learn about this later
 
 // Some other function examples
-function hasUserLoggedin(username){
+function hasUserLoggedin(username) {
     // Suppose while calling this function user does not pass any argument then we can handle that scenarion by using some conditonal operator
-    if(username === undefined || !username){
+    if (username === undefined || !username) {
         console.log("Please enter username first!");
         return; // to stop execution here.
     }
@@ -66,4 +66,14 @@ function hasUserLoggedin(username){
 }
 console.log(hasUserLoggedin(""));
 
-//
+
+const myNewArray = [200, 300, 400, 500, 600];
+function returnMySecondValue(getArray) {
+    return getArray[1];
+}
+
+console.log("My second element of array is:", returnMySecondValue(myNewArray));
+// As argument we can pass directly any object or array also like below:
+// callingFunction({ username: "gyana", price: 300 })
+// callingFunction([200, 300, 400, 500])
+// These way also it works perfectly
