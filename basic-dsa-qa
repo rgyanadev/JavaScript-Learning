@@ -1,0 +1,140 @@
+// 01. Reverse a string
+function reverseString(str) {
+    let newString = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString = newString + str[i];
+    }
+
+    return newString;
+}
+
+console.log(reverseString("something"));
+
+
+// 2. reverse an array
+function reverseArray(arr) {
+    let revArray = [];
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+        revArray.push(arr[i]);
+    }
+
+    return revArray;
+}
+console.log(reverseArray([10, 294, 747, 477, 746]));
+
+// 3. Find maximum element of an array
+function findMaximum(arr) {
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+
+    return max;
+}
+console.log(findMaximum([374, 88, 3847, 836, 87, 22, 43]));
+
+// 4. Find minimum element value
+function findMinimun(arr) {
+    let min = arr[0];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+
+    return min;
+}
+console.log(findMinimun([374, 88, 3847, 836, 87, 22, 43]));
+
+
+// 5. Find specific element from an array;
+function findTarget(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (target === arr[i]) {
+            return true;
+        }
+    }
+
+    return false;
+}
+console.log(findTarget([23, 66, 23, 56, 33], 65));
+
+
+// Remove duplicate element from sorted array
+function removeDuplicate(arr) {
+    if (arr.length === 0) return [];
+
+    let result = [arr[0]];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] !== arr[i - 1]) {
+            result.push(arr[i])
+        }
+    }
+
+    return result;
+}
+console.log(removeDuplicate([1, 1, 2, 2, 3, 4, 4, 5]))
+
+// Two sum
+function twoSum(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] + arr[i + 1] === target) {
+            console.log(`values are: ${arr[i]} & ${arr[i + 1]}`)
+        }
+    }
+}
+twoSum([2, 7, 11, 15], 9);
+
+
+// Vowels in string
+function countVowels(str) {
+    let vowels = "aeiou";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count = count + 1;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels('hellouyy'));
+
+
+// count occurences
+function countOccurrences(arr) {
+    const result = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
+
+        if (result[element]) {
+            result[element] += 1;
+        } else {
+            result[element] = 1;
+        }
+    }
+
+    return result;
+}
+console.log(countOccurrences([1, 1, 2, 2, 3, 3, 4, 5, 6, 6]));
+
+
+// Find the sum of the elements of an array
+function findSum(arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
+    }
+
+    return sum;
+}
+console.log(findSum([1, 2, 3, 4, 5]));

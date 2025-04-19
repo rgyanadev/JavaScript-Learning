@@ -1,10 +1,12 @@
 /*
     {} => Whereever curly braces comes in progamming, those usually identified as scope of that perticuar section.
 
-    Scope is a vast topic itself which has so many rules that progaming should follow.
+    Scope is a vast topic itself which has so many rules that programming should follow.
 
     Why scope?
-    This is because there is something called function scope/global scope and block scope. BLOCK Scope is someting which every progammer follows. 
+    This is because like real life in programming also we need to have some limits. There are usually two types of scopes we have in JS
+    - global scope : which can be accessible globaly.
+    - block scope : while can be accessible only inside perticular section of code.
 
     Before as we heard about var, let & const, then let's understand how the scope works based on these keyword.
 */
@@ -32,3 +34,31 @@ if (true) {
 */
 
 //* There is a difference between browser global scope & node global scope. Both behaves differently.
+
+// More examples of scopes.
+function one() {
+    const username = "gyana";
+
+    function two() {
+        const location = "bhubaneswar";
+        console.log(username);
+    }
+    // console.log(location); // will throw error because we are trying to access it outside of its scope.
+
+    two();// calling function two
+}
+// console.log(username); // This will also throw error cuz we are trying to access this out side of that scope.
+one(); // calling function one
+
+
+if(true){
+    let username = "munna";
+
+    if(true){
+        let website = "linkedin";
+        console.log(username + " " + website);
+    }
+    // console.log(website); // This will throw error because we are accessing outside that scope.
+}
+// console.log(username); // This will throw error because we are accessing outside that scope.
+
